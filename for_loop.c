@@ -3,13 +3,13 @@
 int main()
 {
 
-    int n;
-
-    scanf("%d", &n);
-
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i <= 10; i++)
     {
 
+        if (i == 7)
+        {
+            continue;
+        }
         printf("%d\n", i);
     }
 
