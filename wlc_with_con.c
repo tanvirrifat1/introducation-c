@@ -2,22 +2,21 @@
 
 int main()
 {
-    int A;
-    int B;
 
-    scanf("%d %d", &A, &B);
+    char ch;
 
-    if (A % B == 0)
+    scanf("%c", &ch);
+
+    if (ch >= 'a' && ch <= 'z')
     {
-        printf("Multiples\n");
-    }
-    else if (B % A == 0)
-    {
-        printf("Multiples\n");
+        ch = ch - 32;
+        printf("%c", ch);
     }
     else
     {
-        printf("No Multiples\n");
+        ch = ch + 32;
+        printf("%c", ch);
     }
+
     return 0;
 }
