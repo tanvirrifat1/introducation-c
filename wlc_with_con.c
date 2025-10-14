@@ -4,18 +4,24 @@ int main()
 {
 
     char ch;
-
     scanf("%c", &ch);
 
-    if (ch >= 'a' && ch <= 'z')
+    if (ch >= '0' && ch <= '9')
     {
-        ch = ch - 32;
-        printf("%c", ch);
+        printf("IS DIGIT");
     }
     else
     {
-        ch = ch + 32;
-        printf("%c", ch);
+        printf("ALPHA\n");
+
+        if (ch >= 'a' && ch <= 'z')
+        {
+            printf("IS SMALL");
+        }
+        else
+        {
+            printf("IS CAPITAL");
+        }
     }
 
     return 0;
