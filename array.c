@@ -3,11 +3,11 @@
 int main()
 {
 
-    int ar[5];
+    int a[5] = {0};
 
-    scanf("%d %d %d %d %d", &ar[0], &ar[1], &ar[2], &ar[3], &ar[4]);
-
-    printf("%d %d %d %d %d", ar[0], ar[1], ar[2], ar[3], ar[4]);
-
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", a[i]);
+    }
     return 0;
 }
