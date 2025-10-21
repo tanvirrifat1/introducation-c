@@ -3,24 +3,31 @@
 int main()
 {
 
-    int N;
+    int n;
 
-    scanf("%d", &N);
+    scanf("%d", &n);
 
-    int A[N];
+    int a[n + 1];
 
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &A[i]);
+        scanf("%d", &a[i]);
     }
 
-    for (int i = N - 1; i >= 0; i--)
-    {
+    int idx, val;
 
-        if (i % 2 != 0)
-        {
-            printf("%d ", A[i]);
-        }
+    scanf("%d %d", &idx, &val);
+
+    for (int i = n; i >= idx; i--)
+    {
+        a[i] = a[i - 1];
+    }
+
+    a[idx] = val;
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
     }
 
     return 0;
