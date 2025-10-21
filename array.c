@@ -7,23 +7,23 @@ int main()
 
     scanf("%d", &n);
 
-    int a[n + 1];
+    int a[n - 1];
 
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
     }
 
-    int idx, val;
+    int idx;
 
-    scanf("%d %d", &idx, &val);
+    scanf("%d", &idx);
 
-    for (int i = n; i >= idx; i--)
+    for (int i = idx; i < n; i++)
     {
-        a[i] = a[i - 1];
+        a[i] = a[i + 1];
     }
 
-    a[idx] = val;
+    n--;
 
     for (int i = 0; i < n; i++)
     {
