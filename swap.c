@@ -2,15 +2,13 @@
 
 int main()
 {
+    int a, b, tmp;
 
-    int a = 10;
-    int b = 20;
+    scanf("%d %d", &a, &b);
 
-    int tmp = a;
-
-    a == b;
-
-    b == tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
 
     printf("%d %d", a, b);
 
