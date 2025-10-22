@@ -8,14 +8,9 @@ int main()
 
        scanf("%s", s);
 
-       int count = 0;
+       int size = strlen(s);
 
-       for (int i = 0; s[i] != '\0'; i++)
-       {
-              count++;
-       }
-
-       printf("%d", count);
+       printf("%d", size);
 
        return 0;
 }
