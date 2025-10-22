@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
 
-       char a[5];
+       char s[100];
 
-       for (int i = 0; i < 5; i++)
+       scanf("%s", s);
+
+       int count = 0;
+
+       for (int i = 0; s[i] != '\0'; i++)
        {
-              scanf("%c", &a[i]);
+              count++;
        }
-       for (int i = 0; i < 5; i++)
-       {
-              printf("%c", a[i]);
-       }
+
+       printf("%d", count);
 
        return 0;
 }
