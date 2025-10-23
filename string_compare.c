@@ -7,7 +7,22 @@ int main()
 
     scanf("%s %s", &a, &b);
 
-    printf("%d", strcmp(a, b));
+    int val = strcmp(a, b);
+
+    printf("%d\n", val);
+
+    if (val < 0)
+    {
+        printf("A is smaller");
+    }
+    else if (val == 0)
+    {
+        printf("Equal");
+    }
+    else if (val > 0)
+    {
+        printf("B is smaller");
+    }
 
     return 0;
 }
