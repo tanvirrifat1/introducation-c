@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
@@ -8,9 +7,7 @@ int main()
 
     scanf("%s %s", &a, &b);
 
-    strcat(a, b);
-
-    printf("%s %s", a, b);
+    printf("%d", strcmp(a, b));
 
     return 0;
 }
