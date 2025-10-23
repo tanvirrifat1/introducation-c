@@ -4,20 +4,11 @@
 int main()
 {
 
-    char s[1000001];
+    char st[20];
 
-    scanf("%s", s);
+    scanf("%s", st);
 
-    int len = strlen(s);
-
-    int sum = 0;
-
-    for (int i = 0; i < len; i++)
-    {
-
-        sum = sum + s[i] - '0';
-    }
-    printf("%d", sum);
+    printf("%s", st);
 
     return 0;
 }
