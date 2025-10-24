@@ -3,25 +3,28 @@
 int main()
 {
 
-    char a[101], b[101];
+    int n;
 
-    scanf("%s %s", &a, &b);
+    scanf("%d", &n);
 
-    int val = strcmp(a, b);
+    int a[n];
 
-    printf("%d\n", val);
-
-    if (val < 0)
+    for (int i = 0; i < n; i++)
     {
-        printf("A is smaller");
+        scanf("%d", &a[i]);
     }
-    else if (val == 0)
+
+    int fre[10] = {0};
+
+    for (int i = 0; i < n; i++)
     {
-        printf("Equal");
+        int vl = a[i];
+        fre[vl]++;
     }
-    else if (val > 0)
+
+    for (int i = 0; i < 10; i++)
     {
-        printf("B is smaller");
+        printf("%d => %d\n ", i, fre[i]);
     }
 
     return 0;
