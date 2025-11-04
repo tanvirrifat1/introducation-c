@@ -3,22 +3,19 @@
 int main()
 {
 
-    int n;
+    int n, star = 1;
 
     scanf("%d", &n);
 
-    int first = n / 10;
-    int last = n % 10;
-
-    printf("%d %d\n", first, last);
-
-    if (last % first == 0 || first % last == 0)
+    for (int i = 1; i <= n; i++)
     {
-        printf("Yes");
-    }
-    else
-    {
-        printf("No");
+
+        for (int j = 1; j <= star; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        star++;
     }
 
     return 0;
