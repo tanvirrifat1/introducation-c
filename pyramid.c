@@ -7,25 +7,22 @@ int main()
 
     scanf("%d", &n);
 
-    int star = 1;
+    int a[n];
 
-    int space = n - 1;
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
 
-    for (int i = 1; i <= n; i++)
+    int x;
+
+    for (int i = 0; i < n - 1; i++)
     {
 
-        for (int j = 1; j <= space; j++)
+        for (int j = i + 1; j < n; j++)
         {
-            printf(" ");
+            printf("%d %d\n", a[i], a[j]);
         }
-
-        for (int j = 1; j <= star; j++)
-        {
-            printf("*");
-        }
-        printf("\n");
-        star += 2;
-        space--;
     }
 
     return 0;
