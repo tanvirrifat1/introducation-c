@@ -27,6 +27,7 @@ int main()
             {
                 flag = 1;
                 printf("Yes\n");
+                printf("%d %d", a[i], a[j]);
             }
         }
     }
