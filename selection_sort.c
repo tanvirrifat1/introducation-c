@@ -1,21 +1,6 @@
 #include <stdio.h>
 
-int count_before_one(int A[], int N)
-{
-    int count = 0;
-
-    for (int i = 0; i < N; i++)
-    {
-        if (A[i] == 1)
-        {
-            return count;
-        }
-        count++;
-    }
-    return count;
-}
-
-int main()
+void odd_even()
 {
 
     int N;
@@ -24,14 +9,30 @@ int main()
 
     int A[N];
 
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-
         scanf("%d", &A[i]);
     }
 
-    int val = count_before_one(A, N);
-    printf("%d\n", val);
+    int evenNum = 0, oddNum = 0;
 
+    for (int i = 0; i < N; i++)
+    {
+        if (A[i] % 2 == 0)
+        {
+            evenNum++;
+        }
+        else
+        {
+            oddNum++;
+        }
+    }
+
+    printf("%d %d\n", evenNum, oddNum);
+}
+
+int main()
+{
+    odd_even();
     return 0;
 }
