@@ -1,5 +1,20 @@
 #include <stdio.h>
 
+int count_before_one(int A[], int N)
+{
+    int count = 0;
+
+    for (int i = 0; i < N; i++)
+    {
+        if (A[i] == 1)
+        {
+            return count;
+        }
+        count++;
+    }
+    return count;
+}
+
 int main()
 {
 
@@ -7,26 +22,16 @@ int main()
 
     scanf("%d", &N);
 
-    int space = N - 1;
+    int A[N];
 
-    int val = 1;
-
-    for (int i = 1; i <= N; i++)
+    for (int i = 0; i <= N; i++)
     {
 
-        for (int j = 1; j <= space; j++)
-        {
-            printf(" ");
-        }
-
-        for (int j = 1; j <= val; j++)
-        {
-            printf("%d", j);
-        }
-        printf("\n");
-        val++;
-        space--;
+        scanf("%d", &A[i]);
     }
+
+    int val = count_before_one(A, N);
+    printf("%d\n", val);
 
     return 0;
 }
