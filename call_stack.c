@@ -1,27 +1,17 @@
 #include <stdio.h>
 
-void melllo()
+void fun(int i)
 {
-    printf("mello\n");
-}
+    if (i == 6)
+        return;
 
-void gelllo()
-{
-    printf("gelllo\n");
-    melllo();
-}
-void helllo()
-{
-    printf("hello\n");
-    gelllo();
+    printf("%d\n", i);
+    fun(i + 1);
 }
 
 int main()
 {
-
-    printf("hi\n");
-
-    helllo();
-
+    int i = 0;
+    fun(i);
     return 0;
 }
