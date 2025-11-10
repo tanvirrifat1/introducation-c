@@ -1,1 +1,4 @@
-Palindrome
+hi
+hello
+gelllo
+mello
