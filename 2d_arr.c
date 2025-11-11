@@ -18,14 +18,12 @@ int main()
         }
     }
 
-    for (int i = 0; i < r; i++)
+    int col;
+    scanf("%d", &col);
+
+    for (int i = 0; i < c; i++)
     {
-
-        for (int j = 0; j < c; j++)
-        {
-
-            printf("%d \n", a[i][j]);
-        }
+        printf("%d ", a[i][col]);
     }
 
     return 0;
