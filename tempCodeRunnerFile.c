@@ -1,2 +1,1 @@
-e_one(A, N);
-    // printf("%d\n", val);
+  printf("%d \n", a[i][j]);
