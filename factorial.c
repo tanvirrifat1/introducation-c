@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-int fact(int n)
+long long int fact(int n)
 {
 
     if (n == 1)
@@ -9,7 +9,7 @@ int fact(int n)
         return 1;
     }
 
-    int res = fact(n - 1);
+    long long int res = fact(n - 1);
     return res * n;
 }
 
@@ -20,8 +20,8 @@ int main()
 
     scanf("%d", &n);
 
-    int ans = fact(n);
-    printf("%d", ans);
+    long long int ans = fact(n);
+    printf("%lld", ans);
 
     return 0;
 }
